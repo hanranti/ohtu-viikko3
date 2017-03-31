@@ -43,3 +43,5 @@ jar {
         attributes 'Main-Class': 'Main'
     }
 }
+
+apply plugin: 'checkstyle'
