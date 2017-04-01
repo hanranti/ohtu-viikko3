@@ -1,2 +1,4 @@
 .gradle
 gradleTesti/.gradle
+/HelloCucumber/.nb-gradle/
+/HelloCucumber/build/
