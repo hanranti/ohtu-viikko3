@@ -4,4 +4,4 @@ Pyörä, jonka avulla määritellään, mitä tiimin tulisi aloittaa, lopettaa, 
 
 # Glad, Sad, Mad
 
-Ongelmat, muutokset ja havainnot listataan näitä kuvaaviin kategorioihin Glad, Sad ja Mad. Näille annetaan ääniä joiden mukaan, mitä enemmän ääniä saaneista keskustellaan ensin. Jos aika loppuu, keskustelu keskeytetään.
+Ongelmat, muutokset ja havainnot listataan näitä kuvaaviin kategorioihin Glad, Sad ja Mad. Näille annetaan ääniä joiden mukaan, mitä enemmän ääniä saaneista keskustellaan ensin. Keskustelun tulisi keskittyä siihen, mitä ensi sprintillä tullaan tekemään. Jos aika loppuu, keskustelu keskeytetään.
