@@ -2,18 +2,14 @@ package ohtu;
 
 import ohtu.io.IO;
 import ohtu.services.AuthenticationService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
-import org.springframework.stereotype.Component;
 
-@Component
 public class App {
 
     private IO io;
     private AuthenticationService auth;
 
-    @Autowired
     public App(IO io, AuthenticationService auth) {
         this.io = io;
         this.auth = auth;
