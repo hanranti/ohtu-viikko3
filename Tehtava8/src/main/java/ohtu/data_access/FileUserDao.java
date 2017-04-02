@@ -6,10 +6,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import ohtu.domain.User;
-import org.springframework.stereotype.Component;
 
 public class FileUserDao implements UserDao {
 
@@ -45,11 +45,18 @@ public class FileUserDao implements UserDao {
     @Override
     public void add(User user) {
         users.add(user);
+//        try {
+//            BufferedWriter out = new BufferedWriter(new FileWriter(usersFile));
+//            out.write("name:" + user.getUsername() + "\npass:" + user.getPassword() + "\n");
+//            out.close();
+//        } catch (IOException ex) {
+//        }
         try {
-            BufferedWriter out = new BufferedWriter(new FileWriter(usersFile));
-            out.write("name:" + user.getUsername() + "\npass:" + user.getPassword() + "\n");
+            PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(usersFile, true)));
+            out.print("name:" + user.getUsername() + "\npass:" + user.getPassword() + "\n");
             out.close();
-        } catch (IOException ex) {
+        } catch (IOException e) {
+            //exception handling left as an exercise for the reader
         }
     }
 
