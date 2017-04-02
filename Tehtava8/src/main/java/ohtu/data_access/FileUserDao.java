@@ -16,9 +16,9 @@ public class FileUserDao implements UserDao {
     private final File usersFile;
     private List<User> users;
 
-    public FileUserDao() {
+    public FileUserDao(String fileName) {
         users = new ArrayList<User>();
-        usersFile = new File("LoginCucumberUsers");
+        usersFile = new File(fileName);
         try (BufferedReader br = new BufferedReader(new FileReader(usersFile))) {
             for (String line; (line = br.readLine()) != null;) {
                 users.add(new User(line.substring(5), br.readLine().substring(5)));

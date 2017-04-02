@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Scenario: creation fails with already taken username and valid pasword" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-01T16:47:14" hostname="fuxi16" time="0.003">
+<testsuite name="Scenario: creation fails with already taken username and valid pasword" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-02T19:38:35" hostname="fuxi16" time="0.003">
   <properties/>
-  <testcase name="Given command new user is selected" classname="Scenario: creation fails with already taken username and valid pasword" time="0.0"/>
+  <testcase name="Given command new user is selected" classname="Scenario: creation fails with already taken username and valid pasword" time="0.001"/>
   <testcase name="When username &quot;pekka&quot; and password &quot;pass1&quot; are entered" classname="Scenario: creation fails with already taken username and valid pasword" time="0.0"/>
-  <testcase name="Then system will respond with &quot;new user not registered&quot;" classname="Scenario: creation fails with already taken username and valid pasword" time="0.0"/>
-  <testcase name="classMethod" classname="Scenario: creation fails with already taken username and valid pasword" time="0.007"/>
+  <testcase name="Then system will respond with &quot;new user not registered&quot;" classname="Scenario: creation fails with already taken username and valid pasword" time="0.001"/>
+  <testcase name="classMethod" classname="Scenario: creation fails with already taken username and valid pasword" time="0.008"/>
   <system-out><![CDATA[
   Scenario: creation fails with too short username and valid passord ?[90m# ohtu/new_user.feature:18?[0m
     ?[32mGiven ?[0m?[32mcommand new user is selected?[0m                               ?[90m# Stepdefs.command_new_user_selected()?[0m

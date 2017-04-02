@@ -12,7 +12,9 @@
     <context:annotation-config />
     <context:component-scan base-package="ohtu" />  
     
-    <bean id="fileuserdao" class="ohtu.data_access.FileUserDao" />
+    <bean id="fileuserdao" class="ohtu.data_access.FileUserDao" >
+        <constructor-arg type="java.lang.String" value="LoginCucumberUsers" />
+    </bean>
     
     <bean id="consoleio" class="ohtu.io.ConsoleIO" />
     
