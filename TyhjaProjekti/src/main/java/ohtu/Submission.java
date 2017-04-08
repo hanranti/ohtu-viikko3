@@ -5,7 +5,7 @@ public class Submission {
     private String student_number;
     private String week;
     private String hours;
-    private boolean a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14,
+    private String a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14,
             a15, a16, a17, a18, a19, a20, a21;
     private int tehtyjaTehtavia;
 
@@ -33,156 +33,71 @@ public class Submission {
         this.hours = hours;
     }
 
-    public void setA1(boolean a1) {
-        this.a1 = a1;
-    }
-
-    public void setA2(boolean a2) {
-        this.a2 = a2;
-    }
-
-    public void setA3(boolean a3) {
-        this.a3 = a3;
-    }
-
-    public void setA4(boolean a4) {
-        this.a4 = a4;
-    }
-
-    public void setA5(boolean a5) {
-        this.a5 = a5;
-    }
-
-    public void setA6(boolean a6) {
-        this.a6 = a6;
-    }
-
-    public void setA7(boolean a7) {
-        this.a7 = a7;
-    }
-
-    public void setA8(boolean a8) {
-        this.a8 = a8;
-    }
-
-    public void setA9(boolean a9) {
-        this.a9 = a9;
-    }
-
-    public void setA10(boolean a10) {
-        this.a10 = a10;
-    }
-
-    public void setA11(boolean a11) {
-        this.a11 = a11;
-    }
-
-    public void setA12(boolean a12) {
-        this.a12 = a12;
-    }
-
-    public void setA13(boolean a13) {
-        this.a13 = a13;
-    }
-
-    public void setA14(boolean a14) {
-        this.a14 = a14;
-    }
-
-    public void setA15(boolean a15) {
-        this.a15 = a15;
-    }
-
-    public void setA16(boolean a16) {
-        this.a16 = a16;
-    }
-
-    public void setA17(boolean a17) {
-        this.a17 = a17;
-    }
-
-    public void setA18(boolean a18) {
-        this.a18 = a18;
-    }
-
-    public void setA19(boolean a19) {
-        this.a19 = a19;
-    }
-
-    public void setA20(boolean a20) {
-        this.a20 = a20;
-    }
-
-    public void setA21(boolean a21) {
-        this.a21 = a21;
-    }
-
     private int setTehtyjaTehtavia() {
         tehtyjaTehtavia = 0;
-        if (a1) {
+        if (a1 != null && a1.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a2) {
+        if (a2 != null && a2.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a3) {
+        if (a3 != null && a3.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a4) {
+        if (a4 != null && a4.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a5) {
+        if (a5 != null && a5.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a6) {
+        if (a6 != null && a6.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a7) {
+        if (a7 != null && a7.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a8) {
+        if (a8 != null && a8.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a9) {
+        if (a9 != null && a9.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a10) {
+        if (a10 != null && a10.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a11) {
+        if (a11 != null && a11.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a12) {
+        if (a12 != null && a12.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a13) {
+        if (a13 != null && a13.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a14) {
+        if (a14 != null && a14.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a15) {
+        if (a15 != null && a15.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a16) {
+        if (a16 != null && a16.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a17) {
+        if (a17 != null && a17.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a18) {
+        if (a18 != null && a18.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a19) {
+        if (a19 != null && a19.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a20) {
+        if (a20 != null && a20.equals("true")) {
             tehtyjaTehtavia++;
         }
-        if (a21) {
+        if (a21 != null && a21.equals("true")) {
             tehtyjaTehtavia++;
         }
-
         return tehtyjaTehtavia;
     }
 
@@ -190,71 +105,160 @@ public class Submission {
         return tehtyjaTehtavia;
     }
 
+    public int getTehtavienMaara() {
+        int i = 0;
+        if (a1 == null) {
+            System.out.println(a1);
+            return i;
+        }
+        i++;
+        if (a2 == null) {
+            return i;
+        }
+        i++;
+        if (a3 == null) {
+            return i;
+        }
+        i++;
+        if (a4 == null) {
+            return i;
+        }
+        i++;
+        if (a5 == null) {
+            return i;
+        }
+        i++;
+        if (a6 == null) {
+            return i;
+        }
+        i++;
+        if (a7 == null) {
+            return i;
+        }
+        i++;
+        if (a8 == null) {
+            return i;
+        }
+        i++;
+        if (a9 == null) {
+            return i;
+        }
+        i++;
+        if (a10 == null) {
+            return i;
+        }
+        i++;
+        if (a11 == null) {
+            return i;
+        }
+        i++;
+        if (a12 == null) {
+            return i;
+        }
+        i++;
+        if (a13 == null) {
+            return i;
+        }
+        i++;
+        if (a14 == null) {
+            return i;
+        }
+        i++;
+        if (a15 == null) {
+            return i;
+        }
+        i++;
+        if (a16 == null) {
+            return i;
+        }
+        i++;
+        if (a17 == null) {
+            return i;
+        }
+        i++;
+        if (a18 == null) {
+            return i;
+        }
+        i++;
+        if (a19 == null) {
+            return i;
+        }
+        i++;
+        if (a20 == null) {
+            return i;
+        }
+        i++;
+        if (a21 == null) {
+            return i;
+        }
+        return 0;
+    }
+
     @Override
     public String toString() {
-        String s = "viikko " + week + ": tehtyjä tehtäviä yhteensä: " + setTehtyjaTehtavia() + " aikaa kului "
-                + hours + " tuntia, tehdyt tehtävät: ";
-        if (a1) {
+        String s = "viikko " + week + ": tehtyjä tehtäviä yhteensä: " + setTehtyjaTehtavia()
+                + "(maksimi " + getTehtavienMaara() + "), aikaa kului " + hours + " tuntia, tehdyt tehtävät: ";
+        if (a1 != null && a1.equals("true")) {
             s += "1 ";
         }
-        if (a2) {
+        if (a2 != null && a2.equals("true")) {
             s += "2 ";
         }
-        if (a3) {
+        if (a3 != null && a3.equals("true")) {
             s += "3 ";
         }
-        if (a4) {
+        if (a4 != null && a4.equals("true")) {
             s += "4 ";
         }
-        if (a5) {
+        if (a5 != null && a5.equals("true")) {
             s += "5 ";
         }
-        if (a6) {
+        if (a6 != null && a6.equals("true")) {
             s += "6 ";
         }
-        if (a7) {
+        if (a7 != null && a7.equals("true")) {
             s += "7 ";
         }
-        if (a8) {
+        if (a8 != null && a8.equals("true")) {
             s += "8 ";
         }
-        if (a9) {
+        if (a9 != null && a9.equals("true")) {
             s += "9 ";
         }
-        if (a10) {
+        if (a10 != null && a10.equals("true")) {
             s += "10 ";
         }
-        if (a11) {
+        if (a11 != null && a11.equals("true")) {
             s += "11 ";
         }
-        if (a12) {
+        if (a12 != null && a12.equals("true")) {
             s += "12 ";
         }
-        if (a13) {
+        if (a13 != null && a13.equals("true")) {
             s += "13 ";
         }
-        if (a14) {
+        if (a14 != null && a14.equals("true")) {
             s += "14 ";
         }
-        if (a15) {
+        if (a15 != null && a15.equals("true")) {
             s += "15 ";
         }
-        if (a16) {
+        if (a16 != null && a16.equals("true")) {
             s += "16 ";
         }
-        if (a17) {
+        if (a17 != null && a17.equals("true")) {
             s += "17 ";
         }
-        if (a18) {
+        if (a18 != null && a18.equals("true")) {
             s += "18 ";
         }
-        if (a19) {
+        if (a19 != null && a19.equals("true")) {
             s += "19 ";
         }
-        if (a20) {
+        if (a20 != null && a20.equals("true")) {
             s += "20 ";
         }
-        if (a21) {
+        if (a21 != null && a21.equals("true")) {
             s += "21 ";
         }
         return s;

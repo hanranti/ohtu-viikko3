@@ -13,16 +13,25 @@ public class Main {
             studentNr = args[0];
         }
 
-        System.out.println("opiskelijanumero: " + studentNr + "\n");
+        String studentStatsUrl = "http://ohtustats2017.herokuapp.com/students/" + studentNr + "/submissions";
+        String courseUrl = "https://ohtustats2017.herokuapp.com/courses/1.json";
 
-        String url = "http://ohtustats2017.herokuapp.com/students/" + studentNr + "/submissions";
-
-        String bodyText = Request.Get(url).execute().returnContent().asString();
+        String bodyTextStats = Request.Get(studentStatsUrl).execute().returnContent().asString();
+        String bodyTextCourse = Request.Get(courseUrl).execute().returnContent().asString();
 
 //        System.out.println("json-muotoinen data:");
-//        System.out.println( bodyText );
+//        System.out.println("stats:");
+//        System.out.println(bodyTextStats);
+//        System.out.println("course:");
+//        System.out.println(bodyTextCourse);
+
         Gson mapper = new Gson();
-        Submission[] subs = mapper.fromJson(bodyText, Submission[].class);
+        Submission[] subs = mapper.fromJson(bodyTextStats, Submission[].class);
+        Course course = mapper.fromJson(bodyTextCourse, Course.class);
+        
+        System.out.println("Kurssi: " + course + "\n");
+        
+        System.out.println("opiskelijanumero: " + studentNr + "\n");
 
 //        System.out.println("Oliot:");
         int tehtyjaTehtavia = 0;
